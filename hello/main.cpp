@@ -18,7 +18,6 @@ using namespace std;
 
 int main()
 {
-	iTest = 10;
 	pthread_t id;
 	pthread_create(&id,NULL,thread_test1,NULL);
 	test1();

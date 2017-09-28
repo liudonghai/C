@@ -5,15 +5,21 @@
  * learning and communication.
  *
  */
-
-#ifndef TEST_H
-#define TEST_H
+#ifndef HEADTEST_H
+#define HEADTEST_H
+#define TEST 0
 #include <iostream>
 using namespace std;
 
-int iTest = 0;
-void *thread_test1(void*);
-void test1(void);
-
+extern int iTest;
+class headtest
+{
+public:
+	headtest();
+	~headtest();
+	
+	//int iTest1;
+	void show();
+	
+};
 #endif
-

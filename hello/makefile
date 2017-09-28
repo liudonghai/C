@@ -5,13 +5,13 @@ main : $(objects)
 	g++ -o main $(objects) -lpthread
 
 test.o : test.cpp ../header/test.h
-	gcc -c test.cpp
+	g++ -c test.cpp
 	
 liudonghai.o : liudonghai.cpp ../header/liudonghai.h
-	gcc -c liudonghai.cpp
+	g++ -c liudonghai.cpp
 
 main.o : main.cpp ../header/test.h ../header/liudonghai.h
-	gcc -c main.cpp
+	g++ -c main.cpp
 
 clean:
 	rm -f main $(objects)

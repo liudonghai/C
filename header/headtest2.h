@@ -6,14 +6,8 @@
  *
  */
 
-#ifndef TEST_H
-#define TEST_H
 #include <iostream>
+#include "../header/headtest.h"
 using namespace std;
 
-int iTest = 0;
-void *thread_test1(void*);
-void test1(void);
-
-#endif
-
+void showtest2();

@@ -6,14 +6,18 @@
  *
  */
 
-#ifndef TEST_H
-#define TEST_H
+
 #include <iostream>
+#include "../header/headtest.h"
+#include "../header/headtest2.h"
 using namespace std;
 
-int iTest = 0;
-void *thread_test1(void*);
-void test1(void);
-
-#endif
-
+int  main()
+{
+	int i=iTest;
+	cout<<i<<endl;
+	headtest m_test;
+	m_test.show();
+	showtest2();
+	return 0;
+}

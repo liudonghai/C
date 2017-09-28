@@ -9,11 +9,11 @@
 
 #include "../header/test.h"
 
-iTest = 10;
 
 void test1(void)
 {
 	
+	iTest = 10;
 	cout<<"Test1 function"<<endl;
 }
 void *thread_test1(void*)
