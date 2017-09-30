@@ -6,10 +6,8 @@
  *
  */
 
+//#include <iostream>
+#include "../header/headtest.h"
+//using namespace std;
 
-#include "../header/liudonghai.h"
-
-void test2(void)
-{
-	cout<<"Test2 function"<<endl;
-}
+void showtest2();

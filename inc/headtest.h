@@ -5,11 +5,11 @@
  * learning and communication.
  *
  */
-#ifndef HEADTEST_H
-#define HEADTEST_H
+//#ifndef HEADTEST_H
+//#define HEADTEST_H
 #define TEST 0
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 
 extern int iTest;
 class headtest
@@ -22,4 +22,4 @@ public:
 	void show();
 	
 };
-#endif
+//#endif
