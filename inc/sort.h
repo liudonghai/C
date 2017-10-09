@@ -5,9 +5,11 @@
  * learning and communication.
  *
  */
+#ifndef _SORT_H_
+#define _SORT_H_
 
 //#include <iostream>
-#include "../header/headtest.h"
 //using namespace std;
+void quick_sort(int* psort, int ibeg, int iend);
 
-void showtest2();
+#endif//_SORT_H_

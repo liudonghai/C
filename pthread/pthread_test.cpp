@@ -1,14 +1,24 @@
+/*
+ * Copyright (c) liudonghai
+ * 
+ * This code and algorithms created by liudonghai, only used in 
+ * learning and communication.
+ *
+ */
+ 
 #include <iostream>
 #include <unistd.h>
 #include <pthread.h>
 
 using namespace std;
-int iFlag = 0;
-pthread_mutex_t m_Mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t m_Cond = PTHREAD_COND_INITIALIZER;
+
+static int iFlag = 0;
+static pthread_mutex_t m_Mutex = PTHREAD_MUTEX_INITIALIZER;
+static pthread_cond_t m_Cond = PTHREAD_COND_INITIALIZER;
 
 void* thread1(void *pId);
 void* thread2(void*);
+
 int main()
 {
 	pthread_t iId1;
@@ -29,6 +39,7 @@ int main()
 	//pthread_join(iId1,NULL);
 	return 0;
 }
+
 void* thread1(void *pId)
 {
 	pthread_t *iId = (pthread_t*)pId;
@@ -38,10 +49,12 @@ void* thread1(void *pId)
 		pthread_cond_signal(&m_Cond);
 	iFlag = 1;
 	pthread_mutex_unlock(&m_Mutex);
+	
 	pthread_join(*iId, NULL);
 	cout<<"Thread1 quit"<<endl;
-	//return ;
+	return ;
 }
+
 void* thread2(void*)
 {
 	cout<<"this is thread2"<<endl;
@@ -51,4 +64,5 @@ void* thread2(void*)
 	iFlag = 2;
 	pthread_mutex_unlock(&m_Mutex);
 	cout<<"Thread2 quit"<<endl;
+	return;
 }

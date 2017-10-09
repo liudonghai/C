@@ -1,5 +1,13 @@
+/*
+ * Copyright (c) liudonghai
+ * 
+ * This code and algorithms created by liudonghai, only used in 
+ * learning and communication.
+ *
+ */
+
 #include <iostream>
-#include "test_struct.h"
+#include "../inc/list_node.h"
 using namespace std;
 
 
