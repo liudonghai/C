@@ -17,11 +17,12 @@ class parse
 public:
 	parse();
 	~parse();
-	static void script_parse(void *pName);
+	static void* script_parse(void *pName);
 protected:
 private:
 	
 
 };
 
+#endif
 

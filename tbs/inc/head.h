@@ -6,6 +6,10 @@
  *
  */
 
-#include <iostream>
-using naemspace std;
+#ifndef _HEAD_H_
+#define _HEAD_H_
+
+#define MAX_PATH 256
+
+
 
